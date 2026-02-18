@@ -1,0 +1,131 @@
+//Header Starts here
+.header-main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  box-shadow: 0px 2px 10px rgb(236, 235, 235);
+}
+//navbar
+.header-navbar {
+  padding-top: 0.5rem;
+  --bs-tertiary-bg-rgb: 1;
+  height: 70px;
+
+  .container-fluid {
+    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+    .logo {
+      width: 4%;
+    }
+    #navbarSupportedContent {
+      width: 10%;
+      #Navlinks {
+        margin-left: 0.5rem;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        gap: 1.5rem;
+
+        sup {
+          color: deeppink;
+        }
+        .nav-link {
+          position: relative;
+          padding-bottom: 6px;
+        }
+
+        .nav-link:hover  {
+            #men{
+
+            }
+            border-bottom: 3px solid red;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        .dropdown-menu-custom {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          padding: 1.5rem;
+          display: none;
+          gap: 3rem;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+          display: none;
+        }
+
+        .dropdown:hover .dropdown-menu-custom {
+          display: flex;
+        }
+
+        .dropdown-menu-custom ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .dropdown-menu-custom li {
+          margin-bottom: 0.5rem;
+        }
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        background-color: rgb(235, 235, 235);
+        border-radius: 4px;
+        padding: 0 0.8rem;
+        margin-right: 5rem;
+      }
+
+      .SearchBox {
+        flex: 1;
+        height: 40px;
+        margin-left: 0.5rem;
+        background: transparent;
+        border: none;
+      }
+
+      .SearchBox:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .search:focus-within {
+        background-color: white;
+        border: 1px solid lightgray;
+      }
+
+      .icons {
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        height: 40px;
+
+        .Iconlinks {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          .iconItem {
+            p {
+              margin: 0;
+              font-size: 12px;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
